@@ -2,16 +2,16 @@
 
 public class Day1
 {
-    string _input = File.ReadAllText(@"..\..\..\Day1\Input.txt");
+    readonly string _input = File.ReadAllText(@"..\..\..\Day1\Input.txt");
     public Day1()
     {
         Console.WriteLine("Day1");
         //Part 1
-        Console.WriteLine("P1: The elf that carry most is carrying: " + calculateMaxCalories(_input, 1));
+        Console.WriteLine("P1: The elf that carry most is carrying: " + CalculateMaxCalories(_input, 1));
         //Part 2
-        Console.WriteLine("P2: The top 3 elfs that carry the most is carrying: " + calculateMaxCalories(_input, 3));
+        Console.WriteLine("P2: The top 3 elfs that carry the most is carrying: " + CalculateMaxCalories(_input, 3));
     }
-    public int calculateMaxCalories(string input, int amountElfs)
+     static int CalculateMaxCalories(string input, int amountElfs)
     {
         var elfs = input.Split(new string[] { "\r\n\r\n" },
                        StringSplitOptions.RemoveEmptyEntries);
@@ -27,6 +27,6 @@ public class Day1
             calPerElf.Add(temp);
         }
         return calPerElf.OrderByDescending(x => x).Take(amountElfs).Sum();
-        
+
     }
 }
