@@ -1,10 +1,11 @@
 ﻿namespace AoC;
 
-public class Class1
+public class Day1
 {
     string _input = File.ReadAllText(@"..\..\..\Day1\Input.txt");
-    public Class1()
+    public Day1()
     {
+        Console.WriteLine("Day1");
         //Part 1
         Console.WriteLine("P1: The elf that carry most is carrying: " + calculateMaxCalories(_input, 1));
         //Part 2

@@ -2,4 +2,4 @@
 
 using AoC;
 
-new Class1();
+new Day2();
