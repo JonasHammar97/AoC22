@@ -24,50 +24,27 @@ public class Day2
         for (int i = 0; i < opMoves.Count; i++)
         {
             if (p1)
-                sum += CalcOutcomeP1(opMoves[i], myMoves[i]);
+                sum += CalcOutcomeP1(GetValue(opMoves[i]), GetValue(myMoves[i]));
             else
                 sum += CalcOutcomeP2(opMoves[i], myMoves[i]);
         }
         return sum;
     }
-    static int CalcOutcomeP1(string op, string my)
+    static int CalcOutcomeP1(int op, int me)
     {
-        switch (my)
-        {
-            case "X":
-                if (op == "C")
-                    return 7;
-                if (op == "A")
-                    return 4;
-                return 1;
+        if (me == op)
+            return me + 3; // Draw
+        if (GetNext(me) == op)
+            return me; //Loss
+        if (GetPrevious(me) == op)
+            return me + 6; //Win
+        return -1;
 
-            case "Y":
-                if (op == "A")
-                    return 8;
-                if (op == "B")
-                    return 5;
-                return 2;
-
-            case "Z":
-                if (op == "B")
-                    return 9;
-                if (op == "C")
-                    return 6;
-                return 3;
-            default:
-                return -1;
-        }
     }
 
     static int CalcOutcomeP2(string op, string outcome)
     {
-        int moveScore = 0;
-        if (op == "A")
-            moveScore = 1;
-        if (op == "B")
-            moveScore = 2;
-        if (op == "C")
-            moveScore = 3;
+        int moveScore = GetValue(op);
 
         return outcome switch
         {
@@ -77,4 +54,18 @@ public class Day2
             _ => 0,
         };
     }
+    private static int GetPrevious(int move)
+    {
+        return move == 1 ? 3 : move - 1;
+    }
+    private static int GetNext(int move)
+    {
+        return move == 3 ? 1 : move + 1;
+    }
+    private static int GetValue(string move) => move switch
+    {
+        "A" or "X" => 1,
+        "B" or "Y" => 2,
+        "C" or "Z" => 3,
+    };
 }

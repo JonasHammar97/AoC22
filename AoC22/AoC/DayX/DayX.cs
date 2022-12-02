@@ -12,7 +12,7 @@ public class DayX
         //Part 2
         Console.WriteLine($"P2: {P2}");
     }
-  
+
     static void P1()
     {
     }
