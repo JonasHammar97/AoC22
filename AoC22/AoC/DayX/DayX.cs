@@ -5,7 +5,7 @@ public class DayX
     readonly string _input = File.ReadAllText(@"..\..\..\DayX\ex.txt");
     public DayX()
     {
-        Console.WriteLine("Day3");
+        Console.WriteLine("DayX");
 
         //Part 1
         Console.WriteLine($"P1: {P1}");
