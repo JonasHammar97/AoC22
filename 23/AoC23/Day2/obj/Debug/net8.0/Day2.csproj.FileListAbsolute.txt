@@ -1,0 +1,17 @@
+C:\Users\jonhr\Documents\AoC22\AoC23\Day2\bin\Debug\net8.0\Input.txt
+C:\Users\jonhr\Documents\AoC22\AoC23\Day2\bin\Debug\net8.0\TestInput1.txt
+C:\Users\jonhr\Documents\AoC22\AoC23\Day2\bin\Debug\net8.0\TestInput2.txt
+C:\Users\jonhr\Documents\AoC22\AoC23\Day2\bin\Debug\net8.0\Day2.exe
+C:\Users\jonhr\Documents\AoC22\AoC23\Day2\bin\Debug\net8.0\Day2.deps.json
+C:\Users\jonhr\Documents\AoC22\AoC23\Day2\bin\Debug\net8.0\Day2.runtimeconfig.json
+C:\Users\jonhr\Documents\AoC22\AoC23\Day2\bin\Debug\net8.0\Day2.dll
+C:\Users\jonhr\Documents\AoC22\AoC23\Day2\bin\Debug\net8.0\Day2.pdb
+C:\Users\jonhr\Documents\AoC22\AoC23\Day2\obj\Debug\net8.0\Day2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jonhr\Documents\AoC22\AoC23\Day2\obj\Debug\net8.0\Day2.AssemblyInfoInputs.cache
+C:\Users\jonhr\Documents\AoC22\AoC23\Day2\obj\Debug\net8.0\Day2.AssemblyInfo.cs
+C:\Users\jonhr\Documents\AoC22\AoC23\Day2\obj\Debug\net8.0\Day2.csproj.CoreCompileInputs.cache
+C:\Users\jonhr\Documents\AoC22\AoC23\Day2\obj\Debug\net8.0\Day2.dll
+C:\Users\jonhr\Documents\AoC22\AoC23\Day2\obj\Debug\net8.0\refint\Day2.dll
+C:\Users\jonhr\Documents\AoC22\AoC23\Day2\obj\Debug\net8.0\Day2.pdb
+C:\Users\jonhr\Documents\AoC22\AoC23\Day2\obj\Debug\net8.0\Day2.genruntimeconfig.cache
+C:\Users\jonhr\Documents\AoC22\AoC23\Day2\obj\Debug\net8.0\ref\Day2.dll
